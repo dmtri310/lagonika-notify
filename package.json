@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "17.1.0"
+  },
   "scripts": {
-    "dev": "nodemon"
+    "start": "node dist/main.js",
+    "dev": "nodemon",
+    "postinstall": "tsc",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "keywords": [],
   "author": "",
