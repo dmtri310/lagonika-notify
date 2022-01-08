@@ -10,7 +10,7 @@
     "start": "node dist/main.js",
     "dev": "nodemon",
     "postinstall": "tsc",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+    "deploy": "git add . && git commit -m Heroku && git push heroku main"
   },
   "keywords": [],
   "author": "",
