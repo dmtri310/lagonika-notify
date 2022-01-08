@@ -1,4 +1,4 @@
 import Redis from "ioredis"
-import { REDIS_URI } from "../config/env"
+import { REDIS_URL } from "../config/env"
 
-export default new Redis(REDIS_URI)
+export default new Redis(REDIS_URL)
