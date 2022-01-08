@@ -1,9 +1,8 @@
 import { Router } from "express"
 import { differenceWith, isEqual, omit } from "lodash"
 import { prisma, redis } from "../services"
-import { scrapePosts, includeTarget, sendMail } from "../utils"
+import { scrapePosts, includeTarget, sendMail, setCache } from "../utils"
 import type { Post } from "../types"
-import setCache from "../utils/setCache"
 
 const r = Router()
 
